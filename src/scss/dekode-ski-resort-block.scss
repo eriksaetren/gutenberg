@@ -1,0 +1,81 @@
+
+
+.resort-display {
+
+    .resort-wrapper {
+        .resort-display-top{
+            height: 400px;
+            position: relative;
+
+            .resort-display-name {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #ffffff;
+                text-align: center;
+
+                h2 {
+                    margin: 0.25em 0;
+                }
+            }
+
+            .resort-display-weather {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                color: #ffffff;
+                padding: 0.25em;
+
+                .todays-weather {
+                    font-size: 32px;
+                    margin: 0;
+                }
+
+                .updated-on {
+                    font-size: 26px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .resort-display-bot {
+            background-color: #ffffff;
+
+            .resort-weather-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+
+                .weather-el {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.weather-temperature {
+                        p {
+                            font-size: 48px;
+                            color: #e8252b;
+                        }
+                    }
+
+                    &.weather-wind {
+                        p {
+                            font-size: 26px;
+                        }
+                    }
+
+                    &.weather-condition {
+                        p {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
